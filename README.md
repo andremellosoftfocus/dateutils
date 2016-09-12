@@ -13,6 +13,6 @@ For use add the following line in your project build.gradle:
     
 And in your app build.gradle:
 
-  dependencies {
-    compile 'com.github.softfocusbr:dateutils:7d9e4e45ec'
-  }
+    dependencies {
+        compile 'com.github.softfocusbr:dateutils:7d9e4e45ec'
+    }
