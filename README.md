@@ -11,5 +11,5 @@ For use add the following lines in your app build.gradle:
     }
     
     dependencies {
-        compile 'com.github.softfocusbr:dateutils:v1.0.0'
+        compile 'com.github.softfocusbr:dateutils:v1.0.1'
     }
