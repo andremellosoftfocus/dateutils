@@ -130,7 +130,7 @@ public class DateUtils {
         return meses + fracaoMes;
     }
 
-    public static Date removeHourMinuteSegundMilisegund(Date data) {
+    public static Date removeHourMinuteSecondMilisecond(Date data) {
 
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(data);
@@ -142,7 +142,7 @@ public class DateUtils {
         return calendar.getTime();
     }
 
-    public static Calendar getCalendarWithAtualDateWithoutHourMinuteSegundMiliSegund() {
+    public static Calendar getCalendarWithAtualDateWithoutHourMinuteSecondMiliSecond() {
 
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, 0);
@@ -153,7 +153,7 @@ public class DateUtils {
         return calendar;
     }
 
-    public static Date getAtualDateWithoutHourMinuteSegundMiliSegund(){
+    public static Date getAtualDateWithoutHourMinuteSecondMiliSecond(){
 
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.HOUR_OF_DAY, 0);
