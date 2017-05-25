@@ -18,6 +18,7 @@ public class DateUtils {
 
     private static final int[][] tabelaVariaveis = {{22,2},     {23,2},     {24,4},     {24,5},     {24,6},     {25,7}};
     private static final int[][] tabelaAnos      = {{1582,1699},{1700,1799},{1800,1899},{1900,2099},{2100,2199},{2200,2299}};
+    private static final String[] monthNames = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
 
     public static Date convertStringForDate(String date, String pattern) {
         try {
@@ -161,5 +162,9 @@ public class DateUtils {
         calendar.set(Calendar.MILLISECOND, 0);
 
         return calendar.getTime();
+    }
+
+    public static String getMonthName(int zeroBasedMonthNumber) {
+        return monthNames[zeroBasedMonthNumber];
     }
 }
